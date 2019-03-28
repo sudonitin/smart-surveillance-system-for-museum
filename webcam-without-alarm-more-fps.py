@@ -3,6 +3,7 @@ from darkflow.net.build import TFNet
 import numpy as np
 import time
 import winsound
+import pyscreenshot as ImageGrab
 
 options = {
     'model': 'cfg/tiny-yolo-voc.cfg',
@@ -21,6 +22,8 @@ capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 500)
 countbottle = 0
 tl = ()
 br = ()
+imgcounter = 0
+screenshotflag = 0
 while True:
     stime = time.time()
     ret, frame = capture.read()
@@ -46,12 +49,19 @@ while True:
                 countbottle += 1
         cv2.imshow('frame', frame)
         if countbottle == 0:
+            if screenshotflag == 0:
+                im = ImageGrab.grab()
+                st = str(imgcounter)+'screenshot.png'
+                im.save(st)
+                imgcounter += 1
+                screenshotflag = 1
             frame = cv2.rectangle(frame, btl, bbr, (0,0,255), 5)
             frame = cv2.putText(
                     frame, 'bottle is missing', btl, cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 255), 2)
             cv2.imshow('frame', frame)
         #print('FPS {:.1f}'.format(1 / (time.time() - stime)))
         else:
+           screenshotflag = 0
            winsound.PlaySound(None, winsound.SND_ASYNC)
         countbottle = 0
     if cv2.waitKey(1) & 0xFF == ord('q'):
