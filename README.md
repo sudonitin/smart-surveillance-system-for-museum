@@ -8,3 +8,7 @@ It will also run on computers without GPU i.e. it will run on your processor giv
 One needs to collect lots of images of the artifacts or objects for training the model.
 <br>
 Once the training is done you can simply use the model by editing the 'options' in webcam files and labels of your object.
+<br>
+
+<h3>Features</h3>
+It continuously tracks the artifact, if artifact goes missing it marks the location where it was last seen. Once the alarm is triggered 
