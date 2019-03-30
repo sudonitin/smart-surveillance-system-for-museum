@@ -52,7 +52,7 @@ while True:
             if screenshotflag == 0:
                 im = ImageGrab.grab()
                 st = str(imgcounter)+'screenshot.png'
-                im.save(st)
+                im.save('F:\yolo\smart-survelliance\screenshots\\'+st)
                 imgcounter += 1
                 screenshotflag = 1
             frame = cv2.rectangle(frame, btl, bbr, (0,0,255), 5)
