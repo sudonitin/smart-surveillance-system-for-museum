@@ -15,6 +15,7 @@ Once the training is done you can simply use the model by editing the 'options' 
   <li>It continuously tracks the artifact.</li>
   <li>Alarm triggers when artifact goes missing from the feed.</li>
   <li>It marks the location where it was last seen.</li>
+  <li>Captures the face from the feed of suspects.</li>
 </ul>
 
 <h3>Features to add</h3>
