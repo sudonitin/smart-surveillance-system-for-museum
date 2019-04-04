@@ -11,4 +11,11 @@ Once the training is done you can simply use the model by editing the 'options' 
 <br>
 
 <h3>Features</h3>
-It continuously tracks the artifact, if artifact goes missing it marks the location where it was last seen. Once the alarm is triggered 
+<ul>
+  <li>It continuously tracks the artifact.</li>
+  <li>Alarm triggers when artifact goes missing from the feed.</li>
+  <li>It marks the location where it was last seen.</li>
+</ul>
+
+<h3>Features to add</h3>
+<ul><li>Alarm triggering when artifact is disturbed from original position.</li></ul>
