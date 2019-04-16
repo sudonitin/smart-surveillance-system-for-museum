@@ -16,7 +16,5 @@ Once the training is done you can simply use the model by editing the 'options' 
   <li>Alarm triggers when artifact goes missing from the feed.</li>
   <li>It marks the location where it was last seen.</li>
   <li>Captures the face from the feed of suspects.</li>
+  <li>Alarm triggering when artifact is disturbed from original position.</li>
 </ul>
-
-<h3>Features to add</h3>
-<ul><li>Alarm triggering when artifact is disturbed from original position.</li></ul>
