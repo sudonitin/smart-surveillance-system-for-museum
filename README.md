@@ -17,4 +17,5 @@ Once the training is done you can simply use the model by editing the 'options' 
   <li>It marks the location where it was last seen.</li>
   <li>Captures the face from the feed of suspects.</li>
   <li>Alarm triggering when artifact is disturbed from original position.</li>
+  <li>Multiple feed tracking(If artifact goes missing from feed 1 due to occlusion a false alarm won't be triggered since it looks for the artifact in the other feeds)</li>
 </ul>
