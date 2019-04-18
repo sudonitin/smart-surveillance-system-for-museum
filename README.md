@@ -1,7 +1,7 @@
 # smart surveillance system for museum
 
 <h3>Requirements</h3>
-To run this you need a CUDA emabled GPU on your computer. (<b>Highly recommended</b>)<br>
+To run this you need a CUDA enabled GPU on your computer. (<b>Highly recommended</b>)<br>
 It will also run on computers without GPU i.e. it will run on your processor giving you very poor FPS(around 0.6 to 1FPS), you can use AWS too.
 
 <h3>About the project</h3>
@@ -19,3 +19,5 @@ Once the training is done you can simply use the model by editing the 'options' 
   <li>Alarm triggering when artifact is disturbed from original position.</li>
   <li>Multiple feed tracking(If artifact goes missing from feed 1 due to occlusion a false alarm won't be triggered since it looks for the artifact in the other feeds)</li>
 </ul>
+
+<b>Watch the demonstration (<a href="https://youtu.be/I3j_2NcZQds">click me</a>)</b>
