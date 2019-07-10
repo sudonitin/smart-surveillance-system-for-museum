@@ -20,4 +20,16 @@ Once the training is done you can simply use the model by editing the 'options' 
   <li>Multiple feed tracking(If artifact goes missing from feed 1 due to occlusion a false alarm won't be triggered since it looks for the artifact in the other feeds)</li>
 </ul>
 
+## How to run(Only for me)
+```git
+git clone
+python35 .\setup.py build_ext --inplace
+```
+- Create a ```bin``` folder.
+- Download yolov2 weight and tiny-yolo-v2 weight files from [here](https://pjreddie.com/darknet/yolov2/) and save inside ```bin```.
+
+```git
+python35 .\webcam-without-alarm-more-fps.py
+```
+
 <b>Watch the demonstration (<a href="https://youtu.be/I3j_2NcZQds">click me</a>)</b>
