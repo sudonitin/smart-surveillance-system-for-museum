@@ -49,7 +49,7 @@ while True:
                 countbottle += 1
         cv2.imshow('frame', frame)
         if countbottle == 0:
-            winsound.PlaySound("F:/yolo/dry_darkflow/darkflow/41952784_burglar-alarm-siren-01.wav", winsound.SND_ASYNC | winsound.SND_ALIAS )
+            winsound.PlaySound(os.getcwd()+"\41952784_burglar-alarm-siren-01.wav", winsound.SND_ASYNC | winsound.SND_ALIAS )
             frame = cv2.rectangle(frame, btl, bbr, (0,0,255), 5)
             frame = cv2.putText(
                     frame, 'bottle is missing', btl, cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 255), 2)

@@ -78,6 +78,7 @@ import numpy as np
 import time
 import winsound
 import pyscreenshot as ImageGrab
+import os
 
 options = {
     'model': 'cfg/tiny-yolo-voc.cfg',
@@ -136,7 +137,7 @@ while True:
             if screenshotflag == 0:
                 im = ImageGrab.grab()
                 st = str(imgcounter)+'misplaced.png'
-                im.save('F:\yolo\smart-survelliance\screenshots\\'+st)
+                im.save(os.getcwd()+'\screenshots\\'+st)
                 imgcounter += 1
                 screenshotflag = 1
             frameMiss = cv2.rectangle(frame, btl, bbr, (0,255,0), 5)
@@ -149,7 +150,7 @@ while True:
             if screenshotflag == 0:
                 im = ImageGrab.grab()
                 st = str(imgcounter)+'missing.png'
-                im.save('F:\yolo\smart-survelliance\screenshots\\'+st)
+                im.save(os.getcwd()+'\screenshots\\'+st)
                 imgcounter += 1
                 screenshotflag = 1
             frame = cv2.rectangle(frame, btl, bbr, (0,0,255), 5)
